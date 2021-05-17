@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/04/2021, 01:24:13 PM
+    Author     : Pc
+*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    color: indigo;
+    font-family: inherit; 
+    margin: 0;
+    background: aquamarine;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: indigo;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+}
+.nav-enlace{
+    background: aquamarine;
+    color: indigo;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-enlace:hover{
+    background: burlywood;
+}
+nav{
+    background: cadetblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-button{
+    background: aquamarine;
+    color: indigo;
+    padding: 10px 0;
+    border: 2px solid indigo;
+    display: none;
+}
+@media (max-width:500px){
+    
+    nav{
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 2px;
+        display: block;
+    }
+    .nav-button{
+        display: inline-block;
+    }
+    .hide{
+        display: none;
+    }
+
+}
